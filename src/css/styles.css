@@ -32,6 +32,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 100vh;
+
   }
   /* CABEÇALHO SEGURANDO UMA DIV COM IMAGEM DENTRO E OS LINKS DE NAVEGAÇÃO */
 
