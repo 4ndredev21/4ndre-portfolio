@@ -2,6 +2,7 @@
 
 :root {
   font-size: 62.5%; /* Agora 1rem = 1px */
+  --background-site: #f3f3f3;
 }
 
 * {
@@ -10,17 +11,58 @@
   box-sizing: border-box;
 }
 
-@media (max-width: 48rem) {
-  /* 32rem = 320px e 48rem = 480px */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@media (min-width: 320px) {
   body {
-    background: blue; /* Mudando a cor de fundo para azul em telas entre 320px e 480px */
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  /* CAIXA PRINCIPAL SEGURANDO TODOS ELEMENTOS */
+  .container {
+    margin: 0 auto;
+    width: 95%;
+    padding: 0.5rem;
+    background: var(--background-site);
+  }
+  /* CABEÇALHO SEGURANDO UMA DIV COM IMAGEM DENTRO E OS LINKS DE NAVEGAÇÃO */
+
+  .logo {
+    display: flex;
+  }
+
+  header div a img {
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    height: 100%;
+  }
+  nav {
+    display: flex;
+}
+
+nav ul {
+      gap: 1rem;
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    display: flex;
+  }
+  nav ul li a {
+    text-decoration: none;
   }
 }
 
-body {
-  font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
-  height: 100vh;
+@media (min-width: 480px) {
+  body {
+    background-color: blue;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 480px) {
@@ -29,4 +71,3 @@ body {
 }
 @media (min-width: 320px) and (max-width: 480px) {
 }
-
