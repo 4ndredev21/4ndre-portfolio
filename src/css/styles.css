@@ -21,7 +21,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
   /* CAIXA PRINCIPAL SEGURANDO TODOS ELEMENTOS */
   .container {
@@ -29,11 +28,13 @@ body {
     width: 95%;
     padding: 0.5rem;
     background: var(--background-site);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   /* CABEÇALHO SEGURANDO UMA DIV COM IMAGEM DENTRO E OS LINKS DE NAVEGAÇÃO */
 
   .logo {
-    display: flex;
   }
 
   header div a img {
@@ -42,12 +43,17 @@ body {
     border-radius: 0.5rem;
     height: 100%;
   }
-  nav {
-    display: flex;
-}
 
-nav ul {
-      gap: 1rem;
+  /* MENU DE NAVEGAÇÃO */
+  nav {
+    border: 1px solid red;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul {
+    justify-content: space-around;
     display: flex;
     list-style: none;
   }
