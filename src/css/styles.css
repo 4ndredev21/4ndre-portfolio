@@ -1,6 +1,7 @@
 :root {
   font-size: 62.5%; /* Agora 1rem = 1px */
-  --background-site: #f3f3f3;
+  --background-site: #ffffff;
+  --background-container: #f3f3f3;
 }
 
 * {
@@ -9,79 +10,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
 @media (min-width: 320px) {
   body {
     font-size: 1.6rem;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: red;
+    background-color: var(--background-site);
   }
-  /* CAIXA PRINCIPAL SEGURANDO TODOS ELEMENTOS */
   .container {
-    margin: 0 auto;
-    width: 95%;
-    height: 100%;
-    padding: 0.5rem;
-    background: var(--background-site);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  /* CABEÇALHO SEGURANDO UMA DIV COM IMAGEM DENTRO E OS LINKS DE NAVEGAÇÃO */
-
-  .logo {
-  }
-
-  header div a img {
-    width: 100%;
-    border: none;
-    border-radius: 0.5rem;
-    height: 100%;
-  }
-
-  /* MENU DE NAVEGAÇÃO */
-  nav {
-    font-family: "Roboto", sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.8rem;
-    letter-spacing: 0.1rem;
-    height: 1.9rem;
-    text-transform: uppercase;
-  }
-
-  nav ul {
-    justify-content: space-around;
-    display: flex;
-    list-style: none;
-  }
-  nav ul li {
-    display: flex;
-  }
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    background-color: var(--background-container);
   }
 }
-
-@media (min-width: 480px) {
-  body {
-    background-color: blue;
-  }
-}
-
-/* @media (min-width: 481px) and (max-width: 480px) {
-}
-@media (min-width: 320px) and (max-width: 480px) {
-}
-@media (min-width: 320px) and (max-width: 480px) {
-} */
